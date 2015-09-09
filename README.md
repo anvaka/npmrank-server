@@ -33,11 +33,11 @@ npm start
 
 I'll keep adding routes here. For now these routes are enabled:
 
-```
-/graph/dependent/:pkg-name
-```
+* `/graph/dependent/:pkg-name` - Print a dot file with all transitive depents
+of `pkg-name`
+* `/graph/dependent/:pkg-name/stats` - Print graph summary for `pkg-name`. Summary
+includes number of edges and nodes in transitive dependents graph.
 
-Print a dot file with all transitive depents of `pkg-name`
 
 # license
 
