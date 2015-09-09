@@ -37,6 +37,10 @@ I'll keep adding routes here. For now these routes are enabled:
 of `pkg-name`
 * `/graph/dependent/:pkg-name/stats` - Print graph summary for `pkg-name`. Summary
 includes number of edges and nodes in transitive dependents graph.
+* `/graph/version/:pkg-name` - Print all direct dependents of `pkg-name`
+grouped by required version of the `pkg-name`.
+* `/graph/version/:pkg-name/stats` - Print number of direct dependents of `pkg-name`
+grouped by required version of the `pkg-name`.
 
 
 # license
