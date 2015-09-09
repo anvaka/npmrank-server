@@ -41,7 +41,8 @@ load(inputFileName, function(packages) {
       }
 
       function addLink(key) {
-        graph.addLink(pkg.id, key);
+        var semverRange = deps[key];
+        graph.addLink(pkg.id, key, semverRange);
       }
     }
   }
