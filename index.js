@@ -5,6 +5,7 @@ var startServer = require('./lib/startServer.js');
 console.log('Loading graph...');
 var graph = loadGraph();
 //var graph;
-console.log('Done');
+console.log('Done. Memory Usage:');
+console.log(process.memoryUsage());
 
 startServer(graph);
